@@ -291,7 +291,7 @@ const Home = () => {
                           onClick={() => handleEditNote(item._id)}
                           type="button"
                           data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
+                          data-bs-target="#staticBackdrop"
                           data-bs-whatever="@mdo"
                         >
                           <ion-icon name="create-outline"></ion-icon>
@@ -314,9 +314,11 @@ const Home = () => {
 
                         <div
                           className="modal fade"
-                          id="exampleModal"
+                          id="staticBackdrop"
+                          data-bs-backdrop="static"
+                          data-bs-keyboard="false"
                           tabIndex={-1}
-                          aria-labelledby="exampleModalLabel"
+                          aria-labelledby="staticBackdropLabel"
                           aria-hidden="true"
                         >
                           <div className="modal-dialog">
