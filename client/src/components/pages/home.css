@@ -279,11 +279,11 @@
 .notes-container .card .card-body {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  cursor:all-scroll;
   width: fit-content;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 8px;
+  padding: 10px;
   inline-size: 300px;
   overflow-wrap: break-word;
   font-size: 18px;
