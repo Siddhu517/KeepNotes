@@ -210,6 +210,8 @@
   position: fixed;
   top: 65px;
   left: 0;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   background-color: antiquewhite;
