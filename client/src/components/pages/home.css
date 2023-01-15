@@ -1,0 +1,289 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-container {
+    height: 60px;
+  }
+  .notes-container {
+    height: 626px !important;
+    width: 320px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    width: 100% !important;
+  }
+
+  .navbar-container .searchBar .search {
+    width: 17px;
+  }
+
+  .notes-container {
+    height: 626px !important;
+    width: 768px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-container {
+    width: 1024px;
+  }
+
+  .navbar-container .searchBar .search {
+    width: 20rem !important;
+  }
+
+  .notes-container {
+    height: 835px !important;
+    width: 1024px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar-container {
+    width: 1440px;
+  }
+
+  .navbar-container .searchBar .search {
+    width: 32rem;
+  }
+
+  .notes-container {
+    height: 1044px !important;
+    width: 1440px !important;
+  }
+}
+
+.navbar-container .AppName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar-container .searchBar {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container .searchBar .search {
+  border: 3px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+  height: 44px;
+  border-radius: 20px;
+}
+
+.navbar-container .searchBar .search ion-icon {
+  font-size: 30px;
+  margin: 0 10px 0 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.navbar-container .searchBar .search .searchBox {
+  border: 0;
+  width: 28rem;
+  height: 44px;
+  padding: 0 15px;
+  font-size: 18px;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 25px;
+}
+
+.navbar-container .User {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-container .User .Username {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar-container .User .Username,
+.logout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* form section */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 60px;
+  z-index: 999;
+  background-color: transparent;
+  /*  border: 1px solid red; */
+  height: 17rem;
+  width: 100%;
+}
+
+.form-container .card {
+  position: fixed;
+  top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 35rem;
+  border: 1px solid red;
+}
+
+.form-container .card input {
+  margin: 10px 0;
+  height: 45px;
+  width: 32rem;
+  padding: 0 15px;
+  border-radius: 25px;
+  font-size: 17px;
+  border: 2px solid;
+}
+
+.form-container .card textarea {
+  border: 2px solid;
+  height: 7rem;
+  width: 32rem;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.form-container .addButton {
+  margin: 4px 20px 5px 0;
+  display: flex;
+  align-self: flex-end;
+  justify-content: end;
+  border-radius: 20px;
+  width: 7rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* notes section */
+
+.notes-container {
+  /* border: 1px solid blue; */
+  display: flex;
+}
+
+.buttonView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 50px;
+  width: 15rem;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.buttonView span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.notes-container {
+  margin-top: 7.5rem;
+  /* border: 1px solid blue; */
+  background-color: rgb(223, 225, 226);
+  height: 37rem;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.notes-container .card {
+  overflow: hidden;
+  margin: 1.9rem;
+}
+
+.notes-container .card .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-container .card .card-header {
+  height: 3.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.notes-container .card .card-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: fit-content;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 8px;
+  inline-size: 300px;
+  overflow-wrap: break-word;
+  font-size: 18px;
+  min-height: 10rem;
+  max-height: 30rem;
+  min-width: 20rem;
+  max-width: 30rem;
+}
+
+.notes-container .card .card-footer {
+  height: 3.5rem !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
