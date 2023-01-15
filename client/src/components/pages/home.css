@@ -257,7 +257,10 @@
 }
 
 .notes-container .card .card-header {
-  height: 3.5rem;
+  min-height: 3.5rem;
+  max-height: 100%;
+  min-width: auto;
+  max-width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -265,8 +268,17 @@
   font-weight: 500;
 }
 
+.notes-container .card .card-header .title {
+  /* border: 1px solid red; */
+  flex-wrap: wrap;
+  max-width: 30rem;
+  margin-right: 70px;
+  height: 100%;
+}
+
 .notes-container .card .card-body {
-  overflow-y: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   overflow-x: hidden;
   width: fit-content;
   -ms-flex: 1 1 auto;

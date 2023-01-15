@@ -280,7 +280,7 @@ const Home = () => {
                 <div className="card shadow w-auto h-auto" key={item._id}>
                   <div className="card-header">
                     <div className="d-flex justify-content-between align-items-center">
-                      <div>{item.title}</div>
+                      <div className="title">{item.title}</div>
                       <div className="icons">
                         <button
                           className="position-absolute top-4 end-0 pe-5"
